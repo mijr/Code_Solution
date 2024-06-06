@@ -30,6 +30,37 @@
       <link rel="stylesheet" href="owl.carousel.min.css">
       <link rel="stylesheet" href="owl.theme.default.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <style>
+         .container {
+    margin: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-image: url('down-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+option {
+    padding-left: 30px; /* Adjust the padding to make room for the flag icon */
+}
+
+option[data-image] {
+    background-image: url('flags/' attr(data-image));
+    background-size: 25px 15px; /* Adjust the size of the flag */
+    background-repeat: no-repeat;
+    padding-left: 30px; /* Adjust the padding to make room for the flag icon */
+}
+      </style>
    </head>
    <body>
       <!--header section start -->
@@ -280,6 +311,15 @@
                   <div class="col-lg-3 col-sm-6">
                      <h4 class="link_text">Our Branchs</h4>
                      <p class="footer_text_1">Up coming</p>
+                     <div class="container">
+              <select id="country">
+            <option value="USA" data-image="usa.png">United States</option>
+            <option value="CAN" data-image="canada.png">Canada</option>
+            <option value="CMR" data-image="australia.png">Cameroon</option>
+            <option value="UK" data-image="uk.png">United Kingdom</option>
+            <!-- Add more countries as needed -->
+        </select>
+    </div>
                   </div>
                </div>
             </div>
